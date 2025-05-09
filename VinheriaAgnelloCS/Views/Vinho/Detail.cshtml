@@ -1,0 +1,54 @@
+﻿@model VinheriaAgnelloCS.Models.VinhoModel
+
+<h1>Vinho</h1>
+<h4>Detalhes</h4>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <div class="form-group">
+            <label asp-for="nome" class="control-label fw-bold"></label>
+            <div>
+                <span>@Model.nome</span>
+            </div>
+        </div>
+        <br />
+        <div class="form-group">
+            <label asp-for="descricao" class="control-label fw-bold"></label>
+            <div>
+                <span>@Model.descricao</span>
+            </div>
+        </div>
+        <br />
+        <div class="form-group">
+            <label asp-for="marca" class="control-label fw-bold"></label>
+            <div>
+                <span>@Model.marca</span>
+            </div>
+        </div>
+        <br />
+        <div class="form-group">
+            <label asp-for="categoria" class="control-label fw-bold"></label>
+            <div>
+                <span>@Model.categoria</span>
+            </div>
+        </div>
+        <br />
+        <div class="form-group">
+            <label asp-for="preco" class="control-label fw-bold"></label>
+            <div>
+                <span>@Model.preco.ToString("C")</span>
+            </div>
+        </div>
+        <br />
+        <div class="form-group">
+            <label asp-for="imagem" class="control-label fw-bold"></label>
+            <div>
+                <span>@Model.imagem</span>
+            </div>
+        </div>
+        <br />
+    </div>
+</div>
+<div>
+    <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+</div>

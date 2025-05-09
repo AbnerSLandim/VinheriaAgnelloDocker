@@ -1,0 +1,51 @@
+﻿@model IEnumerable<VinhoModel>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Lista de Vinhos</title>
+    </head>
+<body>
+@if (!string.IsNullOrEmpty((String)TempData["mensagemSucesso"]))
+{
+    <div class="alert alert-warning" role="alert">@TempData["mensagemSucesso"]</div>
+}
+
+<p>
+    <a asp-action="Create" asp-controller="Vinho">Novo vinho</a>
+</p>
+<table class="table">
+    <thead>
+    <tr>
+        <th>Nome</th>
+        <th>Descrição</th>
+        <th>Imagem</th>
+        <th>Marca</th>
+        <th>Categoria</th>
+        <th>Preço</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var vinho in Model)
+    {
+        <tr>
+            <td>@vinho.id</td>
+            <td>@vinho.nome</td>
+            <td>@vinho.descricao</td>
+            <td>@vinho.imagem</td>
+            <td>@vinho.marca</td>
+            <td>@vinho.categoria</td>
+            <td>@vinho.preco.ToString("C")</td>
+
+            <td>
+                <a asp-controller="Vinho" asp-action="Edit" asp-route-id="@vinho.id">Editar</a>
+                <a asp-controller="Vinho" asp-action="Detail" asp-route-id="@vinho.id">Consultar</a>
+                <a asp-controller="Vinho" asp-action="Delete" asp-route-id="@vinho.id">Excluir</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+</body>
+</html>
