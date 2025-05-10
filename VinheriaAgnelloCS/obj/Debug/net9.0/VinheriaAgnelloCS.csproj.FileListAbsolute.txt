@@ -95,3 +95,4 @@ C:\Users\abner\RiderProjects\VinheriaAgnelloCS\VinheriaAgnelloCS\obj\Debug\net9.
 C:\Users\abner\RiderProjects\VinheriaAgnelloCS\VinheriaAgnelloCS\obj\Debug\net9.0\VinheriaAgnelloCS.pdb
 C:\Users\abner\RiderProjects\VinheriaAgnelloCS\VinheriaAgnelloCS\obj\Debug\net9.0\VinheriaAgnelloCS.genruntimeconfig.cache
 C:\Users\abner\RiderProjects\VinheriaAgnelloCS\VinheriaAgnelloCS\obj\Debug\net9.0\ref\VinheriaAgnelloCS.dll
+C:\Users\abner\RiderProjects\VinheriaAgnelloCS\VinheriaAgnelloCS\obj\Debug\net9.0\VinheriaAgnelloCS.sourcelink.json

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VinheriaAgnelloCS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+def6c74df3e1cd87e67d436dbcb028a8a2fe4b25")]
 [assembly: System.Reflection.AssemblyProductAttribute("VinheriaAgnelloCS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VinheriaAgnelloCS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

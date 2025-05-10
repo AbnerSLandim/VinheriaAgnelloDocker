@@ -4,58 +4,71 @@
     ViewData["Title"] = "Cadastrar Vinho";
 }
 
-<h1>Vinho</h1>
-<h4>Novo Vinho</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create" asp-controller="Vinho">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="bg-light">
 
-            <div class="form-group">
-                <label asp-for="nome" class="control-label"></label>
-                <input asp-for="nome" class="form-control" />
-                <span asp-validation-for="nome" class="text-danger"></span>
-            </div>
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h2 class="text-center mb-4">Cadastrar Novo Vinho</h2>
 
-            <div class="form-group">
-                <label asp-for="descricao" class="control-label"></label>
-                <input asp-for="descricao" class="form-control" />
-                <span asp-validation-for="descricao" class="text-danger"></span>
-            </div>
+            <form asp-action="Create" asp-controller="Vinho" class="bg-white p-4 shadow rounded">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
 
-            <div class="form-group">
-                <label asp-for="imagem" class="control-label"></label>
-                <input asp-for="imagem" class="form-control" />
-                <span asp-validation-for="imagem" class="text-danger"></span>
-            </div>
+                <div class="mb-3">
+                    <label asp-for="nome" class="form-label"></label>
+                    <input asp-for="nome" class="form-control" />
+                    <span asp-validation-for="nome" class="text-danger small"></span>
+                </div>
 
-            <div class="form-group">
-                <label asp-for="marca" class="control-label"></label>
-                <input asp-for="marca" class="form-control" />
-                <span asp-validation-for="marca" class="text-danger"></span>
-            </div>
+                <div class="mb-3">
+                    <label asp-for="descricao" class="form-label"></label>
+                    <input asp-for="descricao" class="form-control" />
+                    <span asp-validation-for="descricao" class="text-danger small"></span>
+                </div>
 
-            <div class="form-group">
-                <label asp-for="categoria" class="control-label"></label>
-                <input asp-for="categoria" class="form-control" />
-                <span asp-validation-for="categoria" class="text-danger"></span>
-            </div>
+                <div class="mb-3">
+                    <label asp-for="imagem" class="form-label"></label>
+                    <input asp-for="imagem" class="form-control" />
+                    <span asp-validation-for="imagem" class="text-danger small"></span>
+                </div>
 
-            <div class="form-group">
-                <label asp-for="preco" class="control-label"></label>
-                <input asp-for="preco" class="form-control" />
-                <span asp-validation-for="preco" class="text-danger"></span>
-            </div>
+                <div class="mb-3">
+                    <label asp-for="marca" class="form-label"></label>
+                    <input asp-for="marca" class="form-control" />
+                    <span asp-validation-for="marca" class="text-danger small"></span>
+                </div>
 
-            <br />
-            <div class="form-group">
-                <input type="submit" value="Cadastrar" class="btn btn-primary" />
+                <div class="mb-3">
+                    <label asp-for="categoria" class="form-label"></label>
+                    <input asp-for="categoria" class="form-control" />
+                    <span asp-validation-for="categoria" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-4">
+                    <label asp-for="preco" class="form-label"></label>
+                    <input asp-for="preco" class="form-control" />
+                    <span asp-validation-for="preco" class="text-danger small"></span>
+                </div>
+
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </div>
+            </form>
+
+            <div class="text-center mt-3">
+                <a asp-action="Index" asp-controller="Vinho" class="btn btn-outline-secondary">Voltar para lista</a>
             </div>
-        </form>
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Voltar</a>
-</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
